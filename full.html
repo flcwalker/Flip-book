@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flip Book</title>
+  <style>
+    /* Basic styling for the flip book container */
+    .flip-book {
+      width: 300px;
+      height: 200px;
+      border: 1px solid #ccc;
+      overflow: hidden;
+      position: relative;
+    }
+
+    /* Styling for the pages inside the flip book */
+    .flip-page {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 24px;
+    }
+
+    /* Styling for the front and back of the pages */
+    .front-page {
+      background-color: #f2f2f2;
+      z-index: 2;
+      transform-origin: left;
+    }
+
+    .back-page {
+      background-color: #e0e0e0;
+      z-index: 1;
+      transform-origin: right;
+    }
+
+    /* CSS classes for animating the flip effect */
+    .flip-book.flip .front-page {
+      animation: flip-front 1s forwards;
+    }
+
+    .flip-book.flip .back-page {
+      animation: flip-back 1s forwards;
+    }
+
+    /* Keyframes for the flip effect */
+    @keyframes flip-front {
+      0% { transform: rotateY(0deg); }
+      100% { transform: rotateY(-180deg); }
+    }
+
+    @keyframes flip-back {
+      0% { transform: rotateY(180deg); }
+      100% { transform: rotateY(0deg); }
+    }
+  </style>
+</head>
+<body>
+  <div class="flip-book" onclick="flipPage()">
+    <div class="flip-page front-page">
+      Front Page
+    </div>
+    <div class="flip-page back-page">
+      Back Page
+    </div>
+  </div>
+
+  <script>
+    // Function to handle the flip animation on click
+    function flipPage() {
+      const flipBook = document.querySelector('.flip-book');
+      flipBook.classList.toggle('flip');
+    }
+  </script>
+</body>
+</html>
