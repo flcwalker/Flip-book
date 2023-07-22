@@ -9,9 +9,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-
   font-family: sans-serif;
-  background-color: powderblue;
+  background-color: #f6e58d; /* Paleta de colores: reemplazar con el color deseado */
 }
 
 /* Book */
@@ -29,12 +28,11 @@ body {
   top: 0;
   left: 0;
   perspective: 1500px;
-
 }
 
 .front,
 .back {
-  background-color: white;
+  background-color: #fad2e1; /* Paleta de colores: reemplazar con el color deseado */
   position: absolute;
   width: 100%;
   height: 100%;
@@ -47,7 +45,7 @@ body {
 .front {
   z-index: 1;
   backface-visibility: hidden;
-  border-left: 3px solid powderblue;
+  border-left: 3px solid #f19066; /* Paleta de colores: reemplazar con el color deseado */
 }
 
 .back {
@@ -87,12 +85,12 @@ button:focus {
 }
 
 button:hover i {
-  color: #636363;
+  color: #636e72; /* Paleta de colores: reemplazar con el color deseado */
 }
 
 i {
   font-size: 50px;
-  color: gray;
+  color: #6ab04c; /* Paleta de colores: reemplazar con el color deseado */
 }
 
 /* Paper stack order */
@@ -119,6 +117,7 @@ i {
 #p6 {
   z-index: 5;
 }
+
 #p7 {
   z-index: 4;
 }
