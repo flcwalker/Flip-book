@@ -9,9 +9,29 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: lobster;
+  background-color: #575757;
+  /* Paleta de colores: reemplazar con el color deseado */
+}
 
-  font-family: sans-serif;
-  background-color: powderblue;
+h1 {
+  position: absolute;
+  top: 20px;
+  height: 50px;
+  transform: translateX(-50%);
+  color: #ffffff;
+  font-size: 30px;
+  z-index: 9999;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.451);
+}
+
+
+p {
+  margin: 0 auto;
+  padding: 30px;
+  text-align: justify;
+  color: #ffffff;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.451);
 }
 
 /* Book */
@@ -29,12 +49,12 @@ body {
   top: 0;
   left: 0;
   perspective: 1500px;
-
 }
 
 .front,
 .back {
-  background-color: white;
+  background-color: #fd9beb;
+  /* Paleta de colores: reemplazar con el color deseado */
   position: absolute;
   width: 100%;
   height: 100%;
@@ -47,7 +67,8 @@ body {
 .front {
   z-index: 1;
   backface-visibility: hidden;
-  border-left: 3px solid powderblue;
+  border-left: 3px solid hsl(0, 0%, 36%);
+  /* Paleta de colores: reemplazar con el color deseado */
 }
 
 .back {
@@ -79,7 +100,7 @@ button {
   background-color: transparent;
   cursor: pointer;
   margin: 10px;
-  transition: transform 0.5s;
+  /*transition: transform 0.5s;*/
 }
 
 button:focus {
@@ -87,12 +108,21 @@ button:focus {
 }
 
 button:hover i {
-  color: #636363;
+  color: #f8c0f2;
+  /* Paleta de colores: reemplazar con el color deseado */
 }
 
 i {
   font-size: 50px;
-  color: gray;
+  color: #ffffff;
+  /* Paleta de colores: reemplazar con el color deseado */
+}
+
+#f1 img {
+  width: 150px;
+  height: auto;
+  padding: 10px;
+  border-style: 6px solid black;
 }
 
 /* Paper stack order */
@@ -119,6 +149,7 @@ i {
 #p6 {
   z-index: 5;
 }
+
 #p7 {
   z-index: 4;
 }
