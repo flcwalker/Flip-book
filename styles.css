@@ -10,8 +10,8 @@ body {
   justify-content: center;
   align-items: center;
   font-family: lobster;
-  background-color: #575757;
-  /* Paleta de colores: reemplazar con el color deseado */
+  /*background-color: #575757;*/
+  background-image: url(Imagenes/Fondo\ amor.jpg);
 }
 
 h1 {
@@ -25,6 +25,10 @@ h1 {
   text-shadow: 2px 2px rgba(0, 0, 0, 0.451);
 }
 
+h2 {
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.451);
+  font-size: 50px;
+}
 
 p {
   margin: 0 auto;
@@ -62,6 +66,7 @@ p {
   left: 0;
   transform-origin: left;
   transition: transform 0.5s;
+  border: 4px outset rgb(146, 146, 146);
 }
 
 .front {
@@ -100,7 +105,7 @@ button {
   background-color: transparent;
   cursor: pointer;
   margin: 10px;
-  /*transition: transform 0.5s;*/
+  transition: transform 0.5s;
 }
 
 button:focus {
@@ -118,11 +123,17 @@ i {
   /* Paleta de colores: reemplazar con el color deseado */
 }
 
-#f1 img {
+#f1 {
+  color: #ffffff;
+}
+
+
+#b1 img {
   width: 150px;
   height: auto;
   padding: 10px;
-  border-style: 6px solid black;
+  border: 2px outset rgb(204, 123, 196);
+  margin: 10px;
 }
 
 /* Paper stack order */
