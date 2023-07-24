@@ -1,3 +1,4 @@
+/* Estilos generales */
 * {
   margin: 0;
   padding: 0;
@@ -53,7 +54,7 @@ p {
   text-shadow: 2px 2px rgba(0, 0, 0, 0.451);
 }
 
-/* Book */
+/* Libro */
 .book {
   position: relative;
   width: 350px;
@@ -108,13 +109,13 @@ p {
   transform: rotateY(180deg);
 }
 
-/* Paper flip effect */
+/* Efecto de voltear el papel */
 .flipped .front,
 .flipped .back {
   transform: rotateY(-180deg);
 }
 
-/* Controller Buttons */
+/* Botones de control */
 button {
   border: none;
   background-color: transparent;
@@ -218,7 +219,7 @@ i {
   align-items: center;
 }
 
-#b5 img{
+#b5 img {
   width: 75px;
   height: auto;
   padding: 2px;
@@ -229,8 +230,24 @@ i {
   flex-direction: column;
 }
 
-#b5 h2{
+#b5 h2 {
   margin-left: 35px;
+}
+
+#b6 img {
+  width: 75px;
+  height: auto;
+}
+
+#b10 img {
+  width: 75px;
+  height: auto;
+}
+
+#b10 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #f3 {
@@ -249,7 +266,7 @@ i {
   justify-content: center;
 }
 
-#f6 img{
+#f6 img {
   width: 100px;
   height: auto;
   padding: 10px;
@@ -259,8 +276,7 @@ i {
   justify-content: center;
 }
 
-
-/* Paper stack order */
+/* Orden de apilamiento del papel */
 #p1 {
   z-index: 10;
 }
