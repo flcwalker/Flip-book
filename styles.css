@@ -27,6 +27,7 @@ h1 {
 }
 
 h2 {
+  color: white;
   text-shadow: 2px 2px rgba(0, 0, 0, 0.451);
   font-size: 50px;
 }
@@ -146,12 +147,12 @@ i {
   color: #ffffff;
 }
 
-#f2 p{
+#f2 p {
   margin-top: 55px;
   margin-bottom: 25px;
 }
 
-#f2 img{
+#f2 img {
   width: 250px;
   height: auto;
   padding: 10px;
@@ -183,8 +184,81 @@ i {
   padding: 10px;
   border: 2px outset rgb(207, 159, 203);
   margin: 10px;
-  flex: content;
+  display: flex;
+  justify-content: center;
 }
+
+#b3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+#b3 img {
+  width: 150px;
+  height: auto;
+  padding: 10px;
+  border: 2px outset rgb(207, 159, 203);
+  margin: 10px;
+  display: flex;
+}
+
+#b4 img {
+  width: 150px;
+  height: auto;
+  padding: 10px;
+  border: 2px outset rgb(207, 159, 203);
+  margin: 10px;
+  display: flex;
+}
+
+#b5 {
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+}
+
+#b5 img{
+  width: 75px;
+  height: auto;
+  padding: 2px;
+  border: 2px outset rgb(207, 159, 203);
+  margin-right: 19px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#b5 h2{
+  margin-left: 35px;
+}
+
+#f3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#f3 img {
+  width: 150px;
+  height: auto;
+  padding: 10px;
+  border: 2px outset rgb(207, 159, 203);
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+#f6 img{
+  width: 100px;
+  height: auto;
+  padding: 10px;
+  border: 2px outset rgb(207, 159, 203);
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+}
+
 
 /* Paper stack order */
 #p1 {
